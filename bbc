@@ -1,0 +1,7 @@
+eval subnet="$1"
+eval range="$2"
+
+for ((i=0;i<=$range;i++));
+do
+        bl $subnet.$i | grep "blacklisted" >> $subnet
+done
