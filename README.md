@@ -6,3 +6,6 @@ bulk blacklist check
 
 ### Usage
     bbc 1.1.1 255
+
+### Fork bl
+    https://github.com/adionditsak/blacklist-check-unix-linux-utility
