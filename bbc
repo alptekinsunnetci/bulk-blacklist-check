@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+eval subnet="$1"
+eval range="$2"
+
+echo -e "\n"   >> $subnet
+echo "Control Date: " $(date '+%Y-%m-%d')  >> $subnet
+
+for ((i=0;i<=$range;i++));
+do
+        bl $subnet.$i | grep "blacklisted" >> $subnet
+done
